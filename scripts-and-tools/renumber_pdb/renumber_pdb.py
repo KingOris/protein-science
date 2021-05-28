@@ -60,7 +60,7 @@ class Pdb(object):
                         num = str(count)
                         while len(num) < 3:
                             num = ' ' + num
-                        new_row = '%s%s' %(row[:23], num)
+                        new_row = '%s%s' %(row[:22], num)
                         while len(new_row) < 29:
                             new_row += ' '
                         xcoord = row[30:38].strip()
@@ -116,6 +116,5 @@ if __name__ == '__main__':
         
     for line in pdb1.cont:
         print(line)
-    
 
 
